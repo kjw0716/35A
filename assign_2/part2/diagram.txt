@@ -1,0 +1,32 @@
+|   NucleicAcid   |
+-------------------
+| name : String   |
+| chemicalFormula : String |
+| molarMass : float  |
+| density : float  |
+-------------------
+| NucleicAcid()  |
+| NucleicAcid(name, chemicalFormula, molarMass, density) |
+| setName()       |
+| getName()       |
+| setChemicalFormula() |
+| getChemicalFormula() |
+| setMolarMass()  |
+| getMolarMass()  |
+| setDensity()    |
+| getDensity()    |
+
+| print()        |
+-------------------
+
+        ▲
+        | Association (use it)
+        |
+-------------------------
+|   GenoNucleicAcid     |
+-------------------------
+| Driver     |
+-------------------------
+| input() : NucleicAcid |
+| main()   |
+-------------------------

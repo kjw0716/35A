@@ -1,0 +1,29 @@
+Person
+-------------------
+name : String
+address : String
+age : int
+phone : String
+-------------------
+Person()
+Person(name, address, age, phone)
+getName
+getAddress
+getAge
+getPhone()
+setName
+setAddress
+setAge 
+setPhone
+output
+-------------------
+
+        ▲
+        | Association, use it
+        |
+Driver ---------------------
+detail data
+---------------------
+main code
+readValue
+---------------------

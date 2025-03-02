@@ -1,0 +1,39 @@
+Enter Genome Name: 
+Human Bob
+Enter Number of Genes in Genome: 
+20000
+Enter Number of Chromosomes: 
+46
+Enter Number of Cells: 
+76
+Enter Genome Name: 
+Human Sally
+Enter Number of Genes in Genome: 
+20000
+Enter Number of Chromosomes: 
+46
+Enter Number of Cells: 
+120
+Enter Genome Name: 
+Human Sri
+Enter Number of Genes in Genome: 
+20000
+Enter Number of Chromosomes: 
+46
+Enter Number of Cells: 
+75
+Genome Name:Human Bob
+Number of Genes in Genome:20000
+Number of Chromosomes:46
+Number of Cells:76Trillion
+--------------
+Genome Name:Human Sally
+Number of Genes in Genome:20000
+Number of Chromosomes:46
+Number of Cells:120Trillion
+--------------
+Genome Name:Human Sri
+Number of Genes in Genome:20000
+Number of Chromosomes:46
+Number of Cells:75Trillion
+--------------
