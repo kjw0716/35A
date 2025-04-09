@@ -1,0 +1,6 @@
+Saver1 balance before interest: $10500.00
+Saver2 balance before interest: $3900.00
+After monthly interest calculation:
+Saver1 balance: $10587.50
+Saver2 balance: $3913.00
+ 

@@ -1,0 +1,55 @@
+         ---------------------
+         |     Student       |
+         ---------------------
+         | - SID: int        |
+         | - scores: int[5]  |
+         ---------------------
+         | getSID()          |
+         | setSID(int)       |
+         | getScores()       |
+         | setScores(int[])  |
+         | print()           |
+         ---------------------
+
+                 ▲
+                 │ Association (uses)
+                 │
+     ----------------------------------
+     |          Statistics            |
+     ----------------------------------
+     | - lowscores: int[5]            |
+     | - highscores: int[5]           |
+     | - avgscores: float[5]          |
+     ----------------------------------
+     | findLow(Student[], count)      |
+     | findHigh(Student[], count)     |
+     | findAvg(Student[], count)      |
+     | print(int)                     |
+     ----------------------------------
+
+                 ▲
+                 │ Association (uses)
+                 │
+         ---------------------
+         |       Util        |
+         ---------------------
+         | - fname: String   |
+         ---------------------
+         | readFile(String, Student[]): int |
+         ---------------------
+
+                 ▲
+                 │ Association (uses)
+                 │
+     ----------------------------------
+     |         StudentDriver           |
+     ----------------------------------
+     | - students: Student[ ]         |
+     | - stats: Statistics            |
+     | - util: Util                    |
+     ----------------------------------
+     | main(): void                    |
+     | createStudents()                 |
+     | computeStatistics()              |
+     | displayResults()                  |
+     ----------------------------------

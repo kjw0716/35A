@@ -1,0 +1,134 @@
+         ---------------------
+         |     Student       |
+         ---------------------
+         | - SID: int        |
+         | - scores: int[5]  |
+         ---------------------
+         | + getSID(): int       |
+         | + setSID(int): void   |
+         | + getScores(): int[]  |
+         | + setScores(int[]): void |
+         | + print(): void       |
+         ---------------------
+
+                 ▲
+                 │ Association (uses)
+                 │
+     ----------------------------------
+     |          Statistics            |
+     ----------------------------------
+     | - lowscores: int[5]            |
+     | - highscores: int[5]           |
+     | - avgscores: float[5]          |
+     ----------------------------------
+     | + findLow(Student[], int): void  |
+     | + findHigh(Student[], int): void |
+     | + findAvg(Student[], int): void  |
+     | + print(int): void               |
+     ----------------------------------
+
+                 ▲
+                 │ Association (uses)
+                 │
+         ---------------------
+         |       Util        |
+         ---------------------
+         | - fname: String   |
+         ---------------------
+         | + readFile(Student[]): void  |
+         ---------------------
+
+                 ▲
+                 │ Association (uses)
+                 │
+     ----------------------------------
+     |         FileIO                  |
+     ----------------------------------
+     | + serializeStudentGrade(StudentGrade, String): void |
+     | + deserializeStudentGrade(String): StudentGrade     |
+     ----------------------------------
+
+                 ▲
+                 │ Association (contains)
+                 │
+     ----------------------------------
+     |        StudentGrade             |
+     ----------------------------------
+     | - students: Student[]          |
+     | - stats: Statistics            |
+     | - studentCount: int            |
+     ----------------------------------
+     | + getStudents(): Student[]     |
+     | + getStatistics(): Statistics  |
+     | + getStudentCount(): int       |
+     ----------------------------------
+
+                 ▲
+                 │ Inheritance (extends)
+                 │
+     ----------------------------------
+     |  StudentGradingException        |
+     ----------------------------------
+     | + StudentGradingException(String) |
+     | + logException(String): void      |
+     | + fixInvalidScore(Student, int): void |
+     ----------------------------------
+
+                 ▲
+                 │ Association (uses)
+                 │
+     ----------------------------------
+     |         Driver1                 |
+     ----------------------------------
+     | - students: Student[]           |
+     | - stats: Statistics             |
+     | - util: Util                    |
+     ----------------------------------
+     | + main(): void                   |
+     ----------------------------------
+
+                 ▲
+                 │ Association (uses)
+                 │
+     ----------------------------------
+     |         Driver2                 |
+     ----------------------------------
+     | - students: Student[]           |
+     | - stats: Statistics             |
+     | - fileIO: FileIO                 |
+     ----------------------------------
+     | + main(): void                   |
+     ----------------------------------
+
+                 ▲
+                 │ Implements (interface)
+                 │
+     ----------------------------------
+     |          StudentAPI             |
+     ----------------------------------
+     | + printAllStatistics(): void    |
+     | + printScoreForId(int): void    |
+     ----------------------------------
+                 │
+                 │ Implements
+                 ▼
+     ----------------------------------
+     |       StudentAPIImpl            |
+     ----------------------------------
+     | - students: Student[]           |
+     | - stats: Statistics             |
+     ----------------------------------
+     | + printAllStatistics(): void    |
+     | + printScoreForId(int): void    |
+     ----------------------------------
+
+                 ▲
+                 │ Association (uses)
+                 │
+     ----------------------------------
+     |         Driver3                 |
+     ----------------------------------
+     | - api: StudentAPI               |
+     ----------------------------------
+     | + main(): void                   |
+     ----------------------------------

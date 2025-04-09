@@ -1,0 +1,1 @@
+EXCEPTION: Invalid score (320) for SID=6999, quiz index=4

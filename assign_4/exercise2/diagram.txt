@@ -1,0 +1,66 @@
+        |        Ship        |
+---------------------------------
+| floating              |
+| capacity              |
+| length                |
+| width                 |
+| name                  |
+| height                |
+| origin                |
+| departureDate         |
+| arrivalDate           |
+| departingPort         |
+| arrivalPort           |
+| owner                 |
+---------------------------------
+| Ship(initialValues)   |
+| display()         |
+---------------------------------
+
+               ▲
+               | extends
+               |
+
+---------------------------------
+|         CargoShip              |
+---------------------------------
+| cargoType                      |
+| loadingMethod                   |
+| numberOfCranes                  |
+| contraband                      |
+| cargoValue                      |
+---------------------------------
+| CargoShip(initialValues)        |
+| display()                   |
+---------------------------------
+
+               ▲
+               | extends
+               |
+
+---------------------------------
+|        CruiseShip               |
+---------------------------------
+| ticketPrice                      |
+| numberOfRooms                    |
+| buffetMenu                        |
+| services[]                        |
+| cruiseType                        |
+---------------------------------
+| CruiseShip(initialValues)        |
+| display()                     |
+---------------------------------
+
+               ▲
+               | Association (uses)
+               |
+
+---------------------------------
+|          ShipTest                |
+---------------------------------
+| ships : Ship[]                   |
+---------------------------------
+| main()                    |
+| createShips()                      |
+| displayShip()                  |
+---------------------------------

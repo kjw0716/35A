@@ -1,0 +1,39 @@
+|   SavingsAccount   |
+----------------------
+| savingsBalance|
+| annualInterestRate |
+----------------------
+| SavingsAccount(initialBalance) |
+| calculateMonthlyInterest() |
+| modifyInterestRate(newRate) :  |
+| getSavingsBalance() : double |
+| setSavingsBalance(newBalance) |
+----------------------
+
+        ▲
+        | extends
+        |
+-------------------------
+|   SpecialSavings      |
+-------------------------
+| deposit(amount) |
+| withdraw(amount) |
+| calculateMonthlyInterest()  |
+-------------------------
+
+        ▲
+        | Association (uses)
+        |
+---------------------------------
+|   SpecialSavingsDriver        |
+---------------------------------
+| saver1 : SpecialSavings       |
+| saver2 : SpecialSavings       |
+---------------------------------
+| main() : void                 |
+| createAccounts()         |
+| performDeposits()     |
+| performWithdrawals() |
+| calculateInterest()      |
+| displayBalances()       |
+---------------------------------

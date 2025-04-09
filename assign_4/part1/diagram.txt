@@ -1,0 +1,27 @@
+|   SavingsAccount   |
+----------------------
+| savingsBalance : double |
+| annualInterestRate : static double |
+----------------------
+| SavingsAccount(initialBalance) |
+| calculateMonthlyInterest() |
+| modifyInterestRate(newRate)  |
+| getSavingsBalance()  |
+| setSavingsBalance(newBalance)  |
+----------------------
+
+        ▲
+        | Association (uses)
+        |
+------------------------------
+|   SavingsAccountDriver      |
+------------------------------
+| saver1 : SavingsAccount     |
+| saver2 : SavingsAccount     |
+------------------------------
+| main() : void               |
+| createAccounts()     |
+| setInterestRate(rate) |
+| calculateInterest()  |
+| displayBalances()     |
+------------------------------
